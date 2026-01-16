@@ -73,7 +73,12 @@ fn main() {
 - All structs we defined so far follow the Ownership rules that we covered in [[01-Ownership]]
 
 ### Ownership Transfer
-  ```rust
+  ```run-rust
+  struct Rectangle {
+	width: u32,
+	height: u32
+}
+
   fn main() {
 	  let r1 = Rectangle {
 		  width: 20,
@@ -82,13 +87,20 @@ fn main() {
 	  
 	  let r2 = r1;  // Move ownership from r1 to r2
 	  // now r1 is no longer valid
+	  
+	  println!("width: {}, height: {}", r2.width, r2.height);
   }
   ```
 
 ### Borrow Ownership (Immutable References)
-```rust
+```run-rust
+struct Rectangle {
+	width: u32,
+	height: u32
+}
+
 fn main() {
-	let rec1 = Rectangle {
+	let rect1 = Rectangle {
 		width: 20,
 		height: 30,
 	};
@@ -105,9 +117,14 @@ fn print_dimentions(r: &Rectangle) {
 ```
 
 ### Borrow Ownership (Mutable References)
-```rust
+```run-rust
+struct Rectangle {
+	width: u32,
+	height: u32
+}
+
 fn main() {
-	let rec1 = Rectangle {
+	let mut rect1 = Rectangle {
 		width: 20,
 		height: 30,
 	};
@@ -115,10 +132,10 @@ fn main() {
 	modify_dimentions(&mut rect1); // Borrow rect1
 	
 	// rect1 still valid
-	println!("Modified Dimesions: {}X{}", r.width, r.height);
+	println!("Modified Dimesions: {}X{}", rect1.width, rect1.height);
 }
 
-fn modify_dimentions(r: &Rectangle) {
+fn modify_dimentions(r: &mut Rectangle) {
 	r.width = 100;
 	r.height = 100;
 }
