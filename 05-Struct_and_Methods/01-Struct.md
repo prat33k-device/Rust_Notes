@@ -17,13 +17,15 @@ struct StructName {
 ```
 
 Example:
-```rust
+```run-rust {pre}
 // Define the struct
 struct Rectangle {
 	width: u32,
 	height: u32
 }
+```
 
+```rust
 fn main() {
 	// struct instantiation
 	let r1 = Rectangle {
@@ -74,11 +76,6 @@ fn main() {
 
 ### Ownership Transfer
   ```run-rust
-  struct Rectangle {
-	width: u32,
-	height: u32
-}
-
   fn main() {
 	  let r1 = Rectangle {
 		  width: 20,
@@ -94,11 +91,6 @@ fn main() {
 
 ### Borrow Ownership (Immutable References)
 ```run-rust
-struct Rectangle {
-	width: u32,
-	height: u32
-}
-
 fn main() {
 	let rect1 = Rectangle {
 		width: 20,
@@ -118,11 +110,6 @@ fn print_dimentions(r: &Rectangle) {
 
 ### Borrow Ownership (Mutable References)
 ```run-rust
-struct Rectangle {
-	width: u32,
-	height: u32
-}
-
 fn main() {
 	let mut rect1 = Rectangle {
 		width: 20,

@@ -156,23 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-Understanding_Ownership/02-References_and_Borrowing.md",
+                "file": "05-Struct_and_Methods/01-Struct.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 02-References_and_Borrowing"
-            }
-          },
-          {
-            "id": "0056e18662da0641",
-            "type": "leaf",
-            "state": {
-              "type": "code-execute-manage-executors",
-              "state": {},
-              "icon": "command-glyph",
-              "title": "Execution Runtimes"
+              "title": "Outline of 01-Struct"
             }
           },
           {
@@ -184,9 +174,19 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "a919ca58873f3ec1",
+            "type": "leaf",
+            "state": {
+              "type": "code-execute-manage-executors",
+              "state": {},
+              "icon": "command-glyph",
+              "title": "Execution Runtimes"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       },
       {
         "id": "afa10a4001f350f4",
@@ -217,11 +217,11 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bd35447df7f347d5",
+  "active": "3a3327d7b947377a",
   "lastOpenFiles": [
     "05-Struct_and_Methods/01-Struct.md",
     "Calandar/2026-01-16.md",
