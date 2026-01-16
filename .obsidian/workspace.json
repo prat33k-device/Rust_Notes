@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-Struct_and_Methods/01-Struct.md",
+                "file": "Calandar/2026-01-16.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "01-Struct"
+              "title": "2026-01-16"
             }
           }
         ]
@@ -221,22 +221,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3a3327d7b947377a",
+  "active": "bd35447df7f347d5",
   "lastOpenFiles": [
+    "05-Struct_and_Methods/02-Methods.md",
     "05-Struct_and_Methods/01-Struct.md",
+    "04-Understanding_Ownership/01-Ownership.md",
+    "04-Understanding_Ownership/02-References_and_Borrowing.md",
+    "04-Understanding_Ownership/03-The_Slice_Type.md",
     "Calandar/2026-01-16.md",
     "07-Collections",
     "06-Enums_and_Pattern_Matching",
-    "04-Understanding_Ownership/02-References_and_Borrowing.md",
     "05-Struct_and_Methods",
     "Untitled.base",
-    "04-Understanding_Ownership/03-The_Slice_Type.md",
     "Calandar/2026-01-15.md",
     "2026-01-15.md",
     "Calandar/2026-01-14.md",
     "Calandar",
     "Untitled.md",
-    "04-Understanding_Ownership/01-Ownership.md",
     "04-Understanding_Ownership",
     "new file.md",
     "Untitled.canvas",

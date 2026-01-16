@@ -10,10 +10,8 @@
 - Rust ownership is 3rd way to manage memory
 
 ## why memory management is dificult
-## 3 Ownership Rules
+# Three Ownership Rules
 
 1. Each value in Rust has a variable that's called Owner
 2. There can only be 1 owner at a time
 3. When owner goes out of scope, the value will be dropped
-
-#

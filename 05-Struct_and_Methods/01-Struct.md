@@ -128,3 +128,70 @@ fn modify_dimentions(r: &mut Rectangle) {
 }
 ```
 
+### Structs with non Copy Fields
+```run-rust
+struct Owner {
+	name: String
+}
+
+struct House {
+	owner: Owner,
+	rooms: u32
+}
+
+fn main() {
+
+	let owner1 = Owner {
+		name: String::from("Alice")
+	};
+	
+	let house1 = House {
+		owner: owner1,    // move owner1 to owner
+		rooms: 5
+	};
+	
+	// now owner1 become invalid
+	// println!("{}", owner1.name);  // Error
+	
+	println!("owner name: {}, rooms in house: {}", house1.owner.name, house1.rooms);
+}
+```
+
+## Printing a struct
+```rust
+fn main() {
+	let r1 = Rectangle {
+		width: 10,
+		height: 20
+	};
+	
+	// println!("rect: {}", r1); // Error, can't use println! because Rectangle does not implement the Display trait
+	
+}
+```
+
+- In Rust, if you try to `println!("{}")` something, then compiler expects it to implement the **std::fmt::Display trait**
+- Similarly, if you try to `println!("{:?}")` or `println!("{:#?}")`something for pretty print, then compiler expects it to implement the **std::fmt::Debug trait**
+
+A Very Easy way for now to implement the Debug trait
+```run-rust
+
+//derived debug attribute which auto generates the Debug attributes
+#[derive(Debug)]
+struct Point {
+	x: i32,
+	y: i32
+}
+
+fn main() {
+
+	let p1 = Point {
+		x: 2,
+		y: 3
+	};
+	
+	 println!("p1: {:?}", p1);
+}
+
+```
+
