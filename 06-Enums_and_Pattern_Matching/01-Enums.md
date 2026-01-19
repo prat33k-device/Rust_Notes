@@ -76,3 +76,161 @@ fn main() {
 
 ```
 
+### Enum variants with data
+```rust
+enum Animal {
+	Dog(String),
+	Cat(String),
+	Bird(String)
+}
+
+fn sound(animal: Animal) -> &'static str {
+	match animal {
+		Animal::Dog(_)  => "Bark",    // returns the ref to static str
+		Animal::Cat(_)  => "Meow",   // _ means wildcard, ignore the data
+		Animal::Bird(_) => "Tweet",
+	}
+}
+
+fn main() {
+	let pet1 = Animal::Dog(String::from("Buddy"));
+	let pet2 = Animal::Cat(String::from("Wiskers"));
+	let pet3 = Animal::Bird(String::from("Tweety"));
+	
+	println!("Pet1 makes a sound: {}", sound(pet1));
+	println!("Pet2 makes a sound: {}", sound(pet2));	
+	println!("Pet3 makes a sound: {}", sound(pet3));		
+}
+
+```
+
+### Methods in enums
+```rust
+enum TrafficLight {
+	Red,
+	Yellow,
+	Green,
+}
+
+impl TrafficLight {
+
+	fn duration(&self) -> u32 {
+		match self {
+			TrafficLight::Red => 120,
+			TrafficLight::Yellow => 5,
+			TrafficLight::Green => 30,
+		}
+	}
+
+}
+
+fn main() {
+	let red_light = TrafficLight::Red;
+	let yellow_light = TrafficLight::Yellow;
+	let green_light = TrafficLight::Green;
+	
+	println!("red light duration: {}", red_light.duration());
+	println!("yellow light duration: {}", yellow_light.duration());
+	println!("green light duration: {}", green_light.duration());
+}
+```
+
+### `Option<T>` example
+```rust
+
+fn divide(x: f32, y: f32) -> Option<f32> {
+	if y == 0.0 {
+		None
+	} else {
+		Some(x / y)
+	}
+}
+
+fn main() {
+	let x = 6.0; let y = 0.0;
+	let result = divide(x, y);
+	
+	match result {
+		Some(value) => println!("divide result: {}",  value),
+		None        => println!("Cannot divide by Zero"),
+	}
+}
+
+```
+
+### example with file error handling
+```rust
+use std::fs::File;
+use std::io::ErrorKind;
+
+fn main() {
+	
+	let file_result = File::open("hello.md");
+	
+	match file_result {
+		Ok(file)   => println!("File Opened Successfully: {:?}", file),
+		Err(error) => match error.kind() {
+			ErrorKind::NotFound => println!("File Not Found"),
+			other_error         => println!("Error opening file: {:?}", other_error),
+		}
+	}
+	
+}
+```
+
+### Enums with Structs
+```rust
+use std::fmt;
+
+enum JobStatus {
+	Applied,
+	Interviewing,
+	Offered,
+	Rejected,
+}
+
+struct Candidate {
+	name: String,
+	status: JobStatus
+}
+
+impl Candidate {
+	fn new(name: String, status: JobStatus) -> Candidate {
+		Candidate { name, status }
+	}
+	
+	fn get_status(&self) -> &str {
+		match self.status {
+			JobStatus::Applied => "Applied",
+			JobStatus::Interviewing => "Interviewing",
+			JobStatus::Offered => "Offered",
+			JobStatus::Rejected => "Rejected",
+		}
+	}
+	
+	fn update_status(&mut self, status: JobStatus) {
+		self.status = status
+	}
+}
+
+impl fmt::Display for Candidate {
+	fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+		write!(f, "Candidate: '{}' have status: '{}'", self.name, self.get_status())
+	}
+}
+
+fn main() {
+	let mut candidate1 = Candidate::new(String::from("John"), JobStatus::Applied);
+	
+	println!("{}", candidate1);
+	candidate1.update_status(JobStatus::Interviewing);
+	println!("{}", candidate1);
+	candidate1.update_status(JobStatus::Rejected);
+	println!("{}", candidate1);
+	candidate1.update_status(JobStatus::Offered);
+	println!("{}", candidate1);
+}
+```
+
+
+## read book and comeback
