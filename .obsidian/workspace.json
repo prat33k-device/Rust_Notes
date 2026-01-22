@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08-Packages_Crates_Modules/01-Packages-and-Crates.md",
+                "file": "08-Packages_Crates_Modules/04-Modules.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "01-Packages-and-Crates"
+              "title": "04-Modules"
             }
           }
         ]
@@ -223,8 +223,11 @@
   },
   "active": "cee7b758bc332029",
   "lastOpenFiles": [
-    "06-Enums_and_Pattern_Matching/01-Enums.md",
+    "08-Packages_Crates_Modules/03-Workspaces.md",
+    "08-Packages_Crates_Modules/04-Modules.md",
+    "08-Packages_Crates_Modules/02-Crates.io.md",
     "08-Packages_Crates_Modules/01-Packages-and-Crates.md",
+    "06-Enums_and_Pattern_Matching/01-Enums.md",
     "08-Packages_Crates_Modules",
     "05-Struct_and_Methods/02-Methods.md",
     "05-Struct_and_Methods/01-Struct.md",
