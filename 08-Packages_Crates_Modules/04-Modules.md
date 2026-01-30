@@ -47,3 +47,17 @@ fn main() {
 ```
 
 
+## Where will compiler look for defined module
+1. inline
+2. scr/module_name.rs
+3. src/module_name/mod.rs (older style, still supported path)
+
+For a module named `hosting` that is a submodule of `front_of_house`, the compiler will look for the module’s code in:
+
+- _src/front_of_house/hosting.rs_ (what we covered)
+- _src/front_of_house/hosting/mod.rs_ (older style, still supported path)
+
+
+
+![[Pasted image 20260126153054.png]]
+
