@@ -26,15 +26,10 @@
             "id": "9da6e5c866610f0f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "09-Error-Handling/03-Custom_Error_Types.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "03-Custom_Error_Types"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -95,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d68eaeb5664fb25a",
@@ -223,7 +219,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 339.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -237,11 +233,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "746cb35ce8c252f0",
+  "active": "9da6e5c866610f0f",
   "lastOpenFiles": [
+    "10-Generics_Traits_Lifetimes/02-Traits.md",
+    "10-Generics_Traits_Lifetimes/01-Generics.md",
+    "09-Error-Handling/03-Custom_Error_Types.md",
     "10-Generics_Traits_Lifetimes",
     "09-Error-Handling/02-Recoverable Errors.md",
-    "09-Error-Handling/03-Custom_Error_Types.md",
     "09-Error-Handling/01-Unrecoverable_Errors.md",
     "Pasted image 20260127093527.png",
     "08-Packages_Crates_Modules/05-mod-and-use-keywords.md",
@@ -275,8 +273,6 @@
     "99-DSA",
     "99-DSA/01-test.pdb",
     "99-DSA/01-test.exe",
-    "99-DSA/01-test.01_test.61652fbaf6efa194-cgu.0.rcgu.o",
-    "04-Understanding_Ownership/01-Ownership.md",
     "Untitled.canvas"
   ]
 }
