@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-Enums_and_Pattern_Matching/02-Match with enums (important difference).md",
+                "file": "10-Generics_Traits_Lifetimes/03-Validating_References_with_Lifetimes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "02-Match with enums (important difference)"
+              "title": "03-Validating_References_with_Lifetimes"
             }
           }
         ],
@@ -239,8 +239,9 @@
   },
   "active": "cb34ab487d29d50f",
   "lastOpenFiles": [
-    "06-Enums_and_Pattern_Matching/01-Enums.md",
+    "10-Generics_Traits_Lifetimes/01-Generics.md",
     "06-Enums_and_Pattern_Matching/02-Match with enums (important difference).md",
+    "06-Enums_and_Pattern_Matching/01-Enums.md",
     "08-Packages_Crates_Modules/04-Modules.md",
     "08-Packages_Crates_Modules/05-mod-and-use-keywords.md",
     "09-Error-Handling/02-Recoverable Errors.md",
@@ -248,7 +249,6 @@
     "09-Error-Handling/03-Custom_Error_Types.md",
     "10-Generics_Traits_Lifetimes/03-Validating_References_with_Lifetimes.md",
     "10-Generics_Traits_Lifetimes/02-Traits.md",
-    "10-Generics_Traits_Lifetimes/01-Generics.md",
     "10-Generics_Traits_Lifetimes",
     "Pasted image 20260127093527.png",
     "09-Error-Handling",
